@@ -1,10 +1,10 @@
 @font-face {
-	font-family: 'Lack-Regular';
-	src: url(Lack-Regular.woff);
+	font-family: LackRegular;
+	src: url(lackregular.woff);
 }
 @font-face {
-	font-family: 'Lack-Line-Regular';
-	src: url(Lack-Line-Regular.woff);
+	font-family: LackLineRegular;
+	src: url(lacklineregular.woff);
 }
 body {
 	max-width: 640px;
@@ -24,11 +24,11 @@ div.header {
 	padding-top: 1em;
 
 	border-bottom: 1px solid black;
-	font-family: Lack-Regular, sans;
+	font-family: LackRegular, sans;
 	font-size: 1.6em;
 }
 span.h-date {
-	font-family: Lack-Line-Regular, sans;
+	font-family: LackLine-Regular, sans;
 }
 div.content {
 	padding-bottom: 1em;
@@ -64,6 +64,14 @@ a.h-title {
 a:hover {
 	text-decoration: crimson underline;
 	padding: 2px;
+}
+
+
+a.center-button {
+  padding: 0.33em;
+  font: 48px LackRegular, sans;
+  border: 1px solid black;
+  border-bottom: 3px double;
 }
 
 .copyleft {
