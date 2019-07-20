@@ -1,0 +1,79 @@
+@font-face {
+	font-family: 'Lack-Regular';
+	src: url(Lack-Regular.woff);
+}
+@font-face {
+	font-family: 'Lack-Line-Regular';
+	src: url(Lack-Line-Regular.woff);
+}
+body {
+	max-width: 640px;
+	margin: auto;
+
+	background-color: white;
+	font-family: sans;
+}
+
+::selection {
+	background: crimson;
+	color: white;
+}
+
+div.header {
+	padding-bottom: 1em;
+	padding-top: 1em;
+
+	border-bottom: 1px solid black;
+	font-family: Lack-Regular, sans;
+	font-size: 1.6em;
+}
+span.h-date {
+	font-family: Lack-Line-Regular, sans;
+}
+div.content {
+	padding-bottom: 1em;
+	padding-top: 1em;
+
+	letter-spacing: 1.5px;
+	line-height: 1.44em;
+}
+span.title {
+	font-family: Lack-Regular, sans;
+	font-size: 1.25em;
+}
+p.permalink {
+	display: inline-block;
+	padding: 0.25em;
+	border-left: 1px solid black;
+}
+span.permalink {
+	color: crimson;
+}
+div.footer {
+	text-align: right;
+}
+
+a {
+	color: black;
+	text-decoration: underline;
+}
+a.h-title {
+	color: black;
+	font-weight: bold;
+}
+a:hover {
+	text-decoration: crimson underline;
+	padding: 2px;
+}
+
+.copyleft {
+  display: inline-block;
+  text-align: right;
+  margin: 0px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
