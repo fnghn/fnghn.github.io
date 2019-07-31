@@ -11,6 +11,8 @@
 /* element bom & decoration */
 body {
   overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
 
 	background-color: white;
 	font-family: sans;
@@ -45,14 +47,19 @@ a.center-button {
   border: 1px solid black;
   border-bottom: 3px double;
 }
+img {
+  margin: 0 auto;
+  margin-top: 44vh;
+  max-width: 95%;
+  max-height: 95%;
+  transform: translateY(-50%);
+}
 
 /* scrolling */
-
 .scroll {
-	margin: 0 auto;
+  margin: 0 auto;
   height: 100vh;
   scroll-snap-type: y mandatory;
-  scroll-margin-top: 2em;
 }
 
 div.scroll{
@@ -60,19 +67,15 @@ div.scroll{
 }
 
 .scroll section {
-  margin-top: 1em;
-  max-width: 1024px;
+  padding-top: 2.5%;
+  margin-bottom: 1.25%;
+  width: 1024px;
+  max-width: 95vw;
+  text-align: center;
   scroll-snap-align: start;
 }
 
 /* extra styling */
-
-img {
-  max-width: 80%;
-  height: 100%;
-  display: block;
-  margin: 0 auto;
-}
 
 .copyleft {
   display: inline-block;
