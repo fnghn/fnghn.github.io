@@ -8,15 +8,10 @@
 }
 body {
 	max-width: 640px;
-	margin: auto;
+	margin: 0 auto;
 
 	background-color: white;
 	font-family: sans;
-}
-
-::selection {
-	background: crimson;
-	color: white;
 }
 
 div.header {
@@ -28,7 +23,7 @@ div.header {
 	font-size: 1.6em;
 }
 span.h-date {
-	font-family: LackLine-Regular, sans;
+	font-family: LackLineRegular, sans;
 }
 div.content {
 	padding-bottom: 1em;
@@ -38,7 +33,7 @@ div.content {
 	line-height: 1.44em;
 }
 span.title {
-	font-family: Lack-Regular, sans;
+	font-family: LackRegular, sans;
 	font-size: 1.25em;
 }
 p.permalink {
@@ -74,10 +69,33 @@ a.center-button {
   border-bottom: 3px double;
 }
 
+/* scrolling */
+
+div.scroll-container {
+  scroll-snap-type: y mandatory;
+}
+
+section.scroll-child {
+  scroll-snap-align: start;
+  position: sticky;
+  height: 50vh;
+  padding: 1em;
+  border-bottom: 3px double black;
+}
+
+/* extra styling */
+
+img {
+  max-width: 80%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
 .copyleft {
   display: inline-block;
   text-align: right;
-  margin: 0px;
+  margin: 0;
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
@@ -85,3 +103,9 @@ a.center-button {
   filter: FlipH;
   -ms-filter: "FlipH";
 }
+
+::selection {
+	background: crimson;
+	color: white;
+}
+
