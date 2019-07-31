@@ -1,3 +1,4 @@
+/* fonts */
 @font-face {
 	font-family: LackRegular;
 	src: url(lackregular.woff);
@@ -6,31 +7,13 @@
 	font-family: LackLineRegular;
 	src: url(lacklineregular.woff);
 }
+
+/* element bom & decoration */
 body {
-	max-width: 640px;
-	margin: 0 auto;
+  overflow: hidden;
 
 	background-color: white;
 	font-family: sans;
-}
-
-div.header {
-	padding-bottom: 1em;
-	padding-top: 1em;
-
-	border-bottom: 1px solid black;
-	font-family: LackRegular, sans;
-	font-size: 1.6em;
-}
-span.h-date {
-	font-family: LackLineRegular, sans;
-}
-div.content {
-	padding-bottom: 1em;
-	padding-top: 1em;
-
-	letter-spacing: 1.5px;
-	line-height: 1.44em;
 }
 span.title {
 	font-family: LackRegular, sans;
@@ -44,10 +27,6 @@ p.permalink {
 span.permalink {
 	color: crimson;
 }
-div.footer {
-	text-align: right;
-}
-
 a {
 	color: black;
 	text-decoration: underline;
@@ -60,8 +39,6 @@ a:hover {
 	text-decoration: crimson underline;
 	padding: 2px;
 }
-
-
 a.center-button {
   padding: 0.33em;
   font: 48px LackRegular, sans;
@@ -71,16 +48,21 @@ a.center-button {
 
 /* scrolling */
 
-div.scroll-container {
+.scroll {
+	margin: 0 auto;
+  height: 100vh;
   scroll-snap-type: y mandatory;
+  scroll-margin-top: 2em;
 }
 
-section.scroll-child {
+div.scroll{
+  overflow-y: scroll;
+}
+
+.scroll section {
+  margin-top: 1em;
+  max-width: 1024px;
   scroll-snap-align: start;
-  position: sticky;
-  height: 50vh;
-  padding: 1em;
-  border-bottom: 3px double black;
 }
 
 /* extra styling */
