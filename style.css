@@ -48,13 +48,35 @@ a.center-button {
   border-bottom: 3px double;
 }
 img {
+  float: top left;
+  display: inline-block;
   margin: 0 auto;
-  margin-top: 44vh;
+  margin-top: 44%;
   max-width: 95%;
   max-height: 95%;
   transform: translateY(-50%);
+  vertical-align: bottom;
 }
-
+img.narrow {
+  max-width: 50%;
+}
+span.below {
+  display: inline-block;
+  margin-top: -25%;
+  padding: 0.5em;
+  vertical-align: top;
+  border-top: 1px solid crimson;
+}
+span.beside {
+  text-align: left;
+  display: inline-block;
+  margin-top: 44%;
+  transform: translateY(-50%);
+  padding: 0.5em;
+  vertical-align: top;
+  text-align: center;
+  border-left: 1px solid crimson;
+}
 /* scrolling */
 .scroll {
   margin: 0 auto;
@@ -67,12 +89,10 @@ div.scroll{
 }
 
 .scroll section {
-  padding-top: 2.5%;
-  margin-bottom: 1.25%;
   width: 1024px;
   max-width: 95vw;
   text-align: center;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
 }
 
 /* extra styling */
