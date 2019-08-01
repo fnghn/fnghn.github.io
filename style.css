@@ -73,6 +73,7 @@ span.beside {
   margin-top: 44%;
   transform: translateY(-50%);
   padding: 0.5em;
+  margin-left: 0.5em;
   vertical-align: top;
   text-align: center;
   border-left: 1px solid crimson;
