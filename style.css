@@ -1,11 +1,15 @@
 /* fonts */
 @font-face {
 	font-family: 'Lack Regular';
-	src: url('lackregular.woff'), local('lackregular.woff');
+	src: url('lack-regular.woff');
 }
 @font-face {
 	font-family: 'Lack Line Regular';
-	src: url('lacklineregular.woff'), local('lacklineregular.woff');
+	src: url('lack-line-regular.woff');
+}
+@font-face {
+  font-family: 'Poppins Regular';
+  src: url('poppins-regular.ttf');
 }
 
 /* element bom & decoration */
@@ -14,8 +18,8 @@ body {
   margin: 0 auto;
   padding: 0;
 
-	background-color: white;
-	font-family: 'Lack Regular', sans-serif;
+  background-color: white;
+  font-family: 'Poppins Regular', sans-serif;
 }
 p.permalink {
 	display: inline-block;
@@ -37,7 +41,7 @@ a.h-title {
 }
 a.center-button {
   padding: 0.33em;
-  font: 48px 'Lack Regular', sans;
+  font: 48px 'Lack Regular', sans-serif;
   border: 1px solid black;
   border-bottom: 3px double;
 }
@@ -52,11 +56,12 @@ img {
 }
 span.below {
   display: block;
-  max-width: 7.5em;
+  max-width: 12.5em;
   position: relative;
   bottom: 35vh;
   margin: 0 auto;
   padding: 0.5em;
+  line-height: 1.25em;
   border-top: 1px solid crimson;
 }
 span.beside {
