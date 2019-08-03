@@ -15,31 +15,25 @@ body {
   padding: 0;
 
 	background-color: white;
-	font-family: sans-serif;
-}
-span.title {
 	font-family: 'Lack Regular', sans-serif;
-	font-size: 1.25em;
 }
 p.permalink {
 	display: inline-block;
 	padding: 0.25em;
 	border-left: 1px solid black;
-}
-span.permalink {
 	color: crimson;
 }
 a {
 	color: black;
 	text-decoration: underline;
 }
-a.h-title {
-	color: black;
-	font-weight: bold;
-}
 a:hover {
 	text-decoration: crimson underline;
 	padding: 2px;
+}
+a.h-title {
+	color: black;
+	font-weight: bold;
 }
 a.center-button {
   padding: 0.33em;
@@ -52,30 +46,27 @@ img {
   margin: 0 auto;
   margin-top: 50vh;
   max-width: 95%;
-  max-height: 90%;
+  max-height: 75%;
   transform: translateY(-50%);
-  vertical-align: bottom;
-}
-img.narrow {
-  max-width: 50%;
+  vertical-align: top;
 }
 span.below {
-  display: inline-block;
+  display: block;
+  max-width: 7.5em;
+  position: relative;
+  top: -37.5vh;
+  margin-top: 0.75em;
+  margin: 0 auto;
   padding: 0.5em;
-  vertical-align: top;
-  background: white;
-  z-index: 100;
   border-top: 1px solid crimson;
 }
 span.beside {
   text-align: left;
   display: inline-block;
-  margin-top: 44%;
+  margin-top: 50vh;
   transform: translateY(-50%);
   padding: 0.5em;
   margin-left: 0.5em;
-  vertical-align: top;
-  text-align: center;
   border-left: 1px solid crimson;
 }
 /* scrolling */
@@ -88,6 +79,7 @@ span.beside {
 div.scroll{
   overflow-y: scroll;
   overflow-x: hidden;
+  scrollbar-color: white white;
 }
 
 section.scroll {
@@ -107,7 +99,7 @@ section.scroll {
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  filter: Flip;
+  filter: FlipH;
   -ms-filter: "FlipH";
 }
 
@@ -116,3 +108,7 @@ section.scroll {
 	color: white;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  display: none;
+}
