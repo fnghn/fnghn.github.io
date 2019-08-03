@@ -1,11 +1,11 @@
 /* fonts */
 @font-face {
-	font-family: LackRegular;
-	src: url(lackregular.woff);
+	font-family: 'Lack Regular';
+	src: url('lackregular.woff'), local('lackregular.woff');
 }
 @font-face {
-	font-family: LackLineRegular;
-	src: url(lacklineregular.woff);
+	font-family: 'Lack Line Regular';
+	src: url('lacklineregular.woff'), local('lacklineregular.woff');
 }
 
 /* element bom & decoration */
@@ -15,10 +15,10 @@ body {
   padding: 0;
 
 	background-color: white;
-	font-family: sans;
+	font-family: sans-serif;
 }
 span.title {
-	font-family: LackRegular, sans;
+	font-family: 'Lack Regular', sans-serif;
 	font-size: 1.25em;
 }
 p.permalink {
@@ -43,17 +43,16 @@ a:hover {
 }
 a.center-button {
   padding: 0.33em;
-  font: 48px LackRegular, sans;
+  font: 48px 'Lack Regular', sans;
   border: 1px solid black;
   border-bottom: 3px double;
 }
 img {
-  float: top left;
   display: inline-block;
   margin: 0 auto;
-  margin-top: 44%;
+  margin-top: 50vh;
   max-width: 95%;
-  max-height: 95%;
+  max-height: 90%;
   transform: translateY(-50%);
   vertical-align: bottom;
 }
@@ -62,9 +61,10 @@ img.narrow {
 }
 span.below {
   display: inline-block;
-  margin-top: -25%;
   padding: 0.5em;
   vertical-align: top;
+  background: white;
+  z-index: 100;
   border-top: 1px solid crimson;
 }
 span.beside {
@@ -87,13 +87,14 @@ span.beside {
 
 div.scroll{
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-.scroll section {
+section.scroll {
   width: 1024px;
   max-width: 95vw;
   text-align: center;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 
 /* extra styling */
@@ -106,7 +107,7 @@ div.scroll{
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  filter: FlipH;
+  filter: Flip;
   -ms-filter: "FlipH";
 }
 
