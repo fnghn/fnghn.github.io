@@ -1,11 +1,15 @@
 /* fonts */
 @font-face {
-	font-family: LackRegular;
-	src: url(lackregular.woff);
+	font-family: 'Lack Regular';
+	src: url('lack-regular.woff');
 }
 @font-face {
-	font-family: LackLineRegular;
-	src: url(lacklineregular.woff);
+	font-family: 'Lack Line Regular';
+	src: url('lack-line-regular.woff');
+}
+@font-face {
+  font-family: 'Poppins Regular';
+  src: url('poppins-regular.ttf');
 }
 
 /* element bom & decoration */
@@ -13,91 +17,81 @@ body {
   overflow: hidden;
   margin: 0 auto;
   padding: 0;
-
-	background-color: white;
-	font-family: sans;
-}
-span.title {
-	font-family: LackRegular, sans;
-	font-size: 1.25em;
+  background-color: white;
+  font-family: 'Poppins Regular', sans-serif;
 }
 p.permalink {
 	display: inline-block;
 	padding: 0.25em;
 	border-left: 1px solid black;
-}
-span.permalink {
 	color: crimson;
 }
 a {
 	color: black;
 	text-decoration: underline;
 }
-a.h-title {
-	color: black;
-	font-weight: bold;
-}
 a:hover {
 	text-decoration: crimson underline;
 	padding: 2px;
 }
+a.h-title {
+	color: black;
+	font-weight: bold;
+}
 a.center-button {
   padding: 0.33em;
-  font: 48px LackRegular, sans;
+  font: 48px 'Lack Regular', sans-serif;
   border: 1px solid black;
   border-bottom: 3px double;
 }
 img {
-  float: top left;
-  display: inline-block;
-  margin: 0 auto;
-  margin-top: 44%;
-  max-width: 95%;
-  max-height: 95%;
-  transform: translateY(-50%);
-  vertical-align: bottom;
+  display: block;
+  max-height: 75vh;
+  max-width: 95vw;
 }
 img.narrow {
-  max-width: 50%;
+  max-width: 55vw;
+  height: auto;
 }
-span.below {
-  display: inline-block;
-  margin-top: -25%;
-  padding: 0.5em;
-  vertical-align: top;
-  border-top: 1px solid crimson;
-}
-span.beside {
-  text-align: left;
-  display: inline-block;
-  margin-top: 44%;
-  transform: translateY(-50%);
-  padding: 0.5em;
-  margin-left: 0.5em;
-  vertical-align: top;
-  text-align: center;
-  border-left: 1px solid crimson;
-}
+
 /* scrolling */
 .scroll {
   margin: 0 auto;
-  height: 100vh;
+  height: 92vh;
   scroll-snap-type: y mandatory;
 }
-
 div.scroll{
+  margin-top: 4vh;
+  overflow-x: hidden;
   overflow-y: scroll;
+  scrollbar-color: white white;
 }
-
-.scroll section {
-  width: 1024px;
-  max-width: 95vw;
+table.scroll {
+  margin: 0 auto;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  scroll-snap-align: start;
   text-align: center;
-  scroll-snap-align: center;
+  border-collapse: collapse;
 }
 
 /* extra styling */
 
+span.below {
+  display: inline-block;
+  margin-bottom: 2.5vh;
+  border-top: 1px solid crimson;
+}
+span.beside {
+  display: inline-block;
+  width: 12.5vw;
+  max-width: 7.5em; 
+  text-align: left;
+  margin: 0.5em;
+  padding: 0.5em;
+  border-left: 1px solid crimson;
+  word-break: break-word;
+}
 .copyleft {
   display: inline-block;
   text-align: right;
@@ -115,3 +109,7 @@ div.scroll{
 	color: white;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  display: none;
+}
