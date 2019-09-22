@@ -51,7 +51,14 @@ img {
 }
 img.narrow {
   max-width: 55vw;
-  height: auto;
+}
+
+p.sidebar {
+  position: fixed;
+  left: 0.25em;
+  top: 50vh;
+  padding-right: 0.5em;
+  border-right: 1px solid crimson;
 }
 
 /* scrolling */
