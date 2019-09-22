@@ -53,12 +53,25 @@ img.narrow {
   max-width: 55vw;
 }
 
+table#top {
+  height: 100vh;
+}
+
 p.sidebar {
   position: fixed;
-  left: 0.25em;
+  width: 5em;
+  left: -5em;
   top: 50vh;
+  transform: translateY(-50%);
   padding-right: 0.5em;
-  border-right: 1px solid crimson;
+  background: white;
+  border-right: 3px double crimson;
+  z-index: 100;
+  transition: 1.2s ease;
+}
+p.sidebar:hover {
+  transform: translateX(5em) translateY(-50%);
+  transition: 300ms;
 }
 
 /* scrolling */
