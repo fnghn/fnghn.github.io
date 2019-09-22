@@ -59,18 +59,19 @@ table#top {
 
 p.sidebar {
   position: fixed;
-  width: 5em;
-  left: -5em;
+  width: 6.5em;
+  left: -6.5em;
   top: 50vh;
   transform: translateY(-50%);
   padding-right: 0.5em;
   background: white;
+  padding-right: 1em;
   border-right: 3px double crimson;
   z-index: 100;
   transition: 1.2s ease;
 }
 p.sidebar:hover {
-  transform: translateX(5em) translateY(-50%);
+  transform: translateX(7em) translateY(-50%);
   transition: 300ms;
 }
 
