@@ -25,7 +25,11 @@ function scrollEvent(evt, element) {
   liquid.uniforms.uSpeed.value = Math.log(headerScrollPercent + 1);
 }
 
+const observer = lozad();
+
 document.addEventListener("DOMContentLoaded", function () {
+  observer.observe();
+
   headertextElem = document.getElementById("pageheader");
   headertextElem.innerHTML = "";
   
