@@ -26,8 +26,7 @@ function scrollEvent(evt, element) {
 }
 
 const observer = lozad();
-
-document.addEventListener("DOMContentLoaded", function () {
+document.fonts.ready.then(function () {
   observer.observe();
 
   headertextElem = document.getElementById("pageheader");
