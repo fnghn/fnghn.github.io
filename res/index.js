@@ -1,21 +1,21 @@
-var headertext = new Blotter.Text("finghin.com", {
-    family : "'Lack Regular', sans",
-    size : 48,
-    paddingLeft : 12  ,
-    paddingRight : 48
+const headertext = new Blotter.Text("finghin.com", {
+  family: "'Lack Regular', sans",
+  size: 48,
+  paddingLeft: 12,
+  paddingRight: 48
 });
 
-var liquid = new Blotter.LiquidDistortMaterial();
+let liquid = new Blotter.LiquidDistortMaterial();
 liquid.uniforms.uSpeed.value = 0.05;
 
-var liquidBlotter = new Blotter(liquid, {
+let liquidBlotter = new Blotter(liquid, {
   texts : headertext
 });
 
-var headertextElem, scrollElem, baby0Elem = null;
+let headertextElem, scrollElem = null;
 
 function calcHeaderScroll(element) {
-  let viewportHeight = document.documentElement.clientHeight;
+  const viewportHeight = document.documentElement.clientHeight;
 
   return (element.scrollTop % viewportHeight)/viewportHeight;
 }
@@ -26,7 +26,8 @@ function scrollEvent(evt, element) {
 }
 
 const observer = lozad();
-document.fonts.ready.then(function () {
+
+document.fonts.ready.then(() => {
   observer.observe();
 
   headertextElem = document.getElementById("pageheader");
@@ -37,6 +38,6 @@ document.fonts.ready.then(function () {
     scrollEvent(e, scrollElem);
   });
   
-  let scope = liquidBlotter.forText(headertext);
+  const scope = liquidBlotter.forText(headertext);
   headertextElem == null ? void 0 : scope.appendTo(headertextElem);
 });

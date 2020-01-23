@@ -12,35 +12,22 @@
   src: url('poppins-regular.ttf');
 }
 
-/* element bom & decoration */
+/* element bom */
 body {
   overflow: hidden;
   margin: 0 auto;
   padding: 0;
-  background-color: white;
-  font-family: 'Poppins Regular', sans-serif;
 }
-p.permalink {
-	display: inline-block;
-	padding: 0.25em;
-	border-left: 1px solid black;
-	color: crimson;
-}
-a {
-	color: black;
-	text-decoration: underline;
-}
-a:hover {
-	text-decoration: crimson underline;
-	padding: 2px;
+div.menu {
+  position: fixed;
+  top: 0px;
+  right: 1em;
+  z-index: 100;
 }
 div.pageheader {
   display: block;
-  position: sticky;
+  position: fixed;
   margin: auto;
-  background-color: white;
-  font-family: 'Lack Regular', serif;
-  font-size: 48px
 }
 img {
   display: block;
@@ -50,23 +37,29 @@ img {
 img.narrow {
   max-width: 55vw;
 }
-
-p.sidebar {
-  position: fixed;
-  width: 6.5em;
-  left: -6.5em;
-  top: 50vh;
-  transform: translateY(-50%);
-  padding-right: 0.5em;
-  background: white;
-  padding-right: 1em;
-  border-right: 3px double crimson;
-  z-index: 100;
-  transition: 1.2s ease;
+li.menu {
+  display: inline;
 }
-p.sidebar:hover {
-  transform: translateX(7em) translateY(-50%);
-  transition: 300ms;
+
+/* element decoration */
+a {
+	color: black;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: crimson underline;
+}
+body {
+  background-color: white;
+  font-family: 'Poppins Regular', sans-serif;
+}
+div.pageheader {
+  background-color: white;
+  font-family: 'Lack Regular', serif;
+  font-size: 48px;
+}
+ul.menu {
+  list-style-type: none;
 }
 
 /* scrolling */
@@ -91,22 +84,6 @@ table.scroll {
 }
 
 /* extra styling */
-
-span.below {
-  display: inline-block;
-  margin-bottom: 2.5vh;
-  border-top: 1px solid crimson;
-}
-span.beside {
-  display: inline-block;
-  width: 12.5vw;
-  max-width: 7.5em; 
-  text-align: left;
-  margin: 0.5em;
-  padding: 0.5em;
-  border-left: 1px solid crimson;
-  word-break: break-word;
-}
 .copyleft {
   display: inline-block;
   text-align: right;
@@ -118,12 +95,10 @@ span.beside {
   filter: FlipH;
   -ms-filter: "FlipH";
 }
-
 ::selection {
 	background: crimson;
 	color: white;
 }
-
 ::-webkit-scrollbar {
   width: 0px;
   display: none;
