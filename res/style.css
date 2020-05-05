@@ -4,30 +4,30 @@
 	src: url('lack-regular.woff');
 }
 @font-face {
-	font-family: 'Lack Line Regular';
-	src: url('lack-line-regular.woff');
-}
-@font-face {
   font-family: 'Poppins Regular';
   src: url('poppins-regular.ttf');
 }
 
 /* element bom */
+article {
+  padding-bottom: 6em;
+}
 body {
-  overflow: hidden;
   margin: 0 auto;
   padding: 0;
 }
-div.menu {
+div.header {
   position: fixed;
-  top: 0px;
-  right: 1em;
+  width: 100vw;
+  margin: 0;
+  top: 0;
   z-index: 100;
 }
-div.pageheader {
-  display: block;
-  position: fixed;
+div.content {
+  position: relative;
+  max-width: 36em;
   margin: auto;
+  top: 2em;
 }
 img {
   display: block;
@@ -37,7 +37,20 @@ img {
 img.narrow {
   max-width: 55vw;
 }
-li.menu {
+span.title, span.info, span.menu {
+  display: inline-block;
+  margin: 1em;
+}
+span.info {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+span.menu {
+  float: right;
+}
+li.menu, ul.menu {
   display: inline;
 }
 
@@ -53,10 +66,26 @@ body {
   background-color: white;
   font-family: 'Poppins Regular', sans-serif;
 }
-div.pageheader {
+div.header {
   background-color: white;
-  font-family: 'Lack Regular', serif;
-  font-size: 48px;
+}
+h1, h2, h3 {
+  font-family: 'Lack Regular'
+}
+h1 {
+  margin-left: 1em;
+  font-size: 18pt;
+}
+h2 {
+  margin-left: 0.5em;
+  font-size: 16pt;
+}
+h3 {
+  font-size: 14pt;
+}
+span.title {
+  font-family: 'Lack Regular';
+	text-decoration: crimson underline;
 }
 ul.menu {
   list-style-type: none;
@@ -69,7 +98,7 @@ ul.menu {
   scroll-snap-type: y mandatory;
 }
 div.scroll{
-  margin-top: -4vh;
+  margin-top: 0vh;
   overflow-x: hidden;
   overflow-y: scroll;
   scrollbar-color: white white;
