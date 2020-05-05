@@ -43,14 +43,14 @@ span.title, span.info, span.menu {
 }
 span.info {
   position: absolute;
-  left: 0;
-  width: 100%;
+  left: 48vw;
+  transform: translate(-50%, 0);
   text-align: center;
 }
 span.menu {
   float: right;
 }
-li.menu, ul.menu {
+ul.menu, li.menu {
   display: inline;
 }
 
