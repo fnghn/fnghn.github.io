@@ -10,6 +10,7 @@
 
 /* element bom */
 article {
+  padding-top: 6em;
   padding-bottom: 6em;
 }
 body {
@@ -56,15 +57,17 @@ ul.menu, li.menu {
 
 /* element decoration */
 a {
-	color: black;
+	color: #00000f;
 	text-decoration: underline;
 }
 a:hover {
 	text-decoration: crimson underline;
 }
 body {
-  background-color: white;
+  background-color: #fee6eb;
+	color: #0f0030;
   font-family: 'Poppins Regular', sans-serif;
+  scrollbar-color: #fee6eb #fee6eb;
 }
 div.header {
   background-color: white;
@@ -101,7 +104,6 @@ div.scroll{
   margin-top: 0vh;
   overflow-x: hidden;
   overflow-y: scroll;
-  scrollbar-color: white white;
 }
 table.scroll {
   margin: 0 auto;
@@ -126,7 +128,7 @@ table.scroll {
 }
 ::selection {
 	background: crimson;
-	color: white;
+	color: #fee6eb;
 }
 ::-webkit-scrollbar {
   width: 0px;
