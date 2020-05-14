@@ -63,6 +63,10 @@ a {
 a:hover {
 	text-decoration: crimson underline;
 }
+article {
+  text-align: justify;
+  line-height: 1.75em;
+}
 body {
   background-color: #fee6eb;
 	color: #0f0030;
